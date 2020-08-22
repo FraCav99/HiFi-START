@@ -1,0 +1,44 @@
+#hero {
+    min-height: 80vh;
+    width: 90%;
+    margin: auto;
+    @include flex(row, space-between, center);
+
+    h1 {
+        font-size: 5rem;
+        font-weight: 700;
+    }
+
+    button {
+        cursor: pointer;
+        background: $purple-color;
+        border: none;
+        color: #fff;
+        margin-top: 2rem;
+        padding: 1rem 4rem;
+        font-size: 2rem;
+        font-weight: 500;
+        border-radius: 5px;
+    }
+}
+
+
+@media screen and (max-width: 1199px){
+    svg {
+        display: none;
+    }
+
+    #hero {
+        align-items: center;
+    }
+
+    .text-container {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    
+}

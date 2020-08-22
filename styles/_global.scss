@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$header1: calc(2rem + 1vw);
+$header2: calc(3.5rem + 1vw);
+$header3: calc(3rem + 1vw);
+$header4: calc(2.4rem + 1vw);
+$text: calc(1.5rem + 1vw);
+$big: calc(6rem + 1vw);
+$purple-color: #7C2EBA;
+$cyan-color: #0EE8DB;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+li,
+button,
+a{
+    font-size: $text;
+}
+
+h1 {
+    font-size: $header1;
+}
+
+h2 {
+    font-size: $header2;
+}
+
+h3 {
+    font-size: $header3;
+}
+
+h4,h5{
+    font-size: $header4;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+@mixin flex($direction: "", $justify:"", $align:""){
+    display: flex;
+    flex-direction: unquote($direction);
+    justify-content: unquote($justify);
+    align-items: unquote($align);
+}
