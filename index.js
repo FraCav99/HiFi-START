@@ -1,6 +1,6 @@
 const burger = document.querySelector('.burger-menu');
 const nav = document.querySelector('.nav-links');
-const menuLinks = document.querySelectorAll('.fading-links li');
+const menuLinks = document.querySelectorAll('.nav-links li');
 
 
 // Toggle Nav
